@@ -50,8 +50,8 @@ git = [
     "dep:gix",
 ]
 # Exactly one of 'gix-reqwest' or 'gix-curl' must be enabled when using the 'git' feature.
-gix-reqwest = ["tame-index/gix-reqwest", "git"]
-gix-curl = ["tame-index/gix-curl", "git"]
+gix-reqwest = ["git"]
+gix-curl = ["git"]
 dependency-tree = ["cargo-lock/dependency-tree"]
 osv-export = ["git"]
 binary-scanning = ["dep:auditable-info", "dep:auditable-serde", "dep:binfarce", "dep:quitters", "dep:once_cell"]
